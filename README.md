@@ -59,3 +59,32 @@ Worker thread–based file processing
  Real CPU monitoring (not memory-based)
 
  Graceful shutdown handling
+## API end point 
+
+1. localhost:3000/api/upload/file
+
+method post 
+
+body {file:send file}
+
+2. localhost:3000/api/policy/search?username=Honey Rexroad
+
+method get
+
+3. localhost:3000/api/policy/aggregate
+
+method get
+
+4. localhost:3000/api/message/schedule
+
+method post
+
+
+payload 
+{
+    "message": "Policy renewal reminder",
+    "day": "2025-12-20",
+    "time": "14:30"
+}
+
+
